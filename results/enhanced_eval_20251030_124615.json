@@ -1,0 +1,173 @@
+{
+  "LLM+KG": {
+    "model_name": "LLM+KG",
+    "model_config": {
+      "name": "LLM+KG",
+      "model_path": "/home/ypx/mxdmxyy/minimindtrain/MA680/minimind/out/full_sft_kg_enhanced_512.pth",
+      "use_rag": false,
+      "description": "知识图谱增强模型"
+    },
+    "final_scores": {
+      "ACC": 28.3,
+      "REL": 38.1,
+      "Comp": 35.7,
+      "Clarity": 36.3,
+      "Overall": 34.2,
+      "BLEU": 0.14003642207059927,
+      "ROUGE-1": 0.3594551836363831,
+      "ROUGE-2": 0.14511368595087654,
+      "ROUGE-L": 0.3569353453434765
+    },
+    "num_samples": 100,
+    "predictions": [
+      "Full stop;Traffic pattern",
+      "KBOT,43 ft msl",
+      "VMC",
+      "38.459436,-88.669444",
+      "Cessna 172B",
+      "The National Transportation Safety Board",
+      "172 N",
+      "Wreckage and Impact Information",
+      "The pilot's failure to maintain aircraft control during landing.",
+      "N/"
+    ],
+    "references": [
+      "Forced landing",
+      "IND,797 ft msl",
+      "VMC",
+      "28.429399,-81.308998",
+      "HEFTY Polar Cub",
+      "The National Transportation Safety Board",
+      "PA-28-235",
+      "FRONTENAC, MN (MY50)",
+      "The pilot's improper landing flare with a left crosswind, which resulted in a hard landing, collapsed landing gear, runway excursion, and nose-over.",
+      "N/"
+    ],
+    "questions": [
+      "What was the VFR Approach/Landing of the accident no. WPR20LA038?",
+      "What was the Observation Facility, Elevation of the accident no. CEN14LA327?",
+      "What was the Meteorological Information and Flight Plan Conditions at Accident Site of the accident no. CEN21FA345?",
+      "What was the Latitude, Longitude of the accident no. DCA22LA001?",
+      "What is the model of the aircraft for the accident no. ANC16FA065?",
+      "Who determines the probable cause(s) of this accident no. ERA18FA118?",
+      "What is the Model/Series of the aircraft bearing accident no. WPR10CA233?",
+      "Where was the Destination of the accident no. CEN14CA479?",
+      "What are the Probable Causes of the accident no. GAA19CA243?",
+      "What was the Turbulence Severity Forecast/Actual of the accident no. ERA20CA210?"
+    ]
+  },
+  "LLM+RAG": {
+    "model_name": "LLM+RAG",
+    "model_config": {
+      "name": "LLM+RAG",
+      "model_path": "/home/ypx/mxdmxyy/minimindtrain/MA680/minimind/out/full_sft_512.pth",
+      "use_rag": true,
+      "description": "基础LLM + RAG检索增强"
+    },
+    "final_scores": {
+      "ACC": 5.1,
+      "REL": 11.5,
+      "Comp": 13.2,
+      "Clarity": 22.5,
+      "Overall": 12.205,
+      "BLEU": 0.015252980355450356,
+      "ROUGE-1": 0.04565620439124863,
+      "ROUGE-2": 0.025172160889876536,
+      "ROUGE-L": 0.04505014378518802
+    },
+    "num_samples": 100,
+    "predictions": [
+      "Straight (ABC)/Landing and the VFR (ATC) on S02)/fing (CCC)/fing 25, AL",
+      "1.5-12 ft msl",
+      "Meteorological Information",
+      "Glass G, He then tail was",
+      "Class 26, 1856",
+      "No. 1.56 inches of the�...\n\n\n注意事项:\n1.1.2.2.2.2.1.2.1.2.2.3.1.1.2.3.2.1.2.1.2.2.1.1.2.2.2.1.1.1.2.2.2.2.2.1.1.2.1.1.2.1.2.2.1.1.1.1.2.2.2.1.2.1.2.2.1.2.1.1.2.2.1.11.2.2.2.2.2.1.2.2.1.2.2.1.2.2.4.2.2.1.2.2.2.2.1.2.1.2.1.2.1.1.2.2.1.2.2.1.2.1.2.1.2.2.2.2.2.1.2.2.2.2.2.2.2.2.2.2.2.2.2.2.2..2.2..1.2.2.2.2.2.2.2.2.2.2.2.2.2.2.2.2.2.2.2.2.2.2.2.2.2.2.2.3.2.2.2.2.2.2.2.2.2.2.3.2.2.2.2.2.2.2.2.2.2.2,2.2.2.2.3.2.2.2.2.2.3.2.2.2.2.2.2.2.2.2.2.2.2.\n\n\n\n\n\n2.2.2.2.2.2.2.2.2.2.2.2.2.2.2.2.\n2.2.\n2.2.2.2.2.2.2.2.\n\n\n\n\n2.2.2.2.\n\n\n\n\n\n\n2.2.2.",
+      "SERIE, the aircraft and fractured",
+      "Shuel bekennest of the Dube, AK",
+      "",
+      "1.300, AK"
+    ],
+    "references": [
+      "Forced landing",
+      "IND,797 ft msl",
+      "VMC",
+      "28.429399,-81.308998",
+      "HEFTY Polar Cub",
+      "The National Transportation Safety Board",
+      "PA-28-235",
+      "FRONTENAC, MN (MY50)",
+      "The pilot's improper landing flare with a left crosswind, which resulted in a hard landing, collapsed landing gear, runway excursion, and nose-over.",
+      "N/"
+    ],
+    "questions": [
+      "What was the VFR Approach/Landing of the accident no. WPR20LA038?",
+      "What was the Observation Facility, Elevation of the accident no. CEN14LA327?",
+      "What was the Meteorological Information and Flight Plan Conditions at Accident Site of the accident no. CEN21FA345?",
+      "What was the Latitude, Longitude of the accident no. DCA22LA001?",
+      "What is the model of the aircraft for the accident no. ANC16FA065?",
+      "Who determines the probable cause(s) of this accident no. ERA18FA118?",
+      "What is the Model/Series of the aircraft bearing accident no. WPR10CA233?",
+      "Where was the Destination of the accident no. CEN14CA479?",
+      "What are the Probable Causes of the accident no. GAA19CA243?",
+      "What was the Turbulence Severity Forecast/Actual of the accident no. ERA20CA210?"
+    ]
+  },
+  "LLM+KG+RAG": {
+    "model_name": "LLM+KG+RAG",
+    "model_config": {
+      "name": "LLM+KG+RAG",
+      "model_path": "/home/ypx/mxdmxyy/minimindtrain/MA680/minimind/out/full_sft_kg_enhanced_512.pth",
+      "use_rag": true,
+      "description": "知识图谱增强 + RAG检索增强"
+    },
+    "final_scores": {
+      "ACC": 2.1,
+      "REL": 7.1,
+      "Comp": 10.0,
+      "Clarity": 21.0,
+      "Overall": 9.105,
+      "BLEU": 0.00878680432512673,
+      "ROUGE-1": 0.028429734112741238,
+      "ROUGE-2": 0.01133333319288889,
+      "ROUGE-L": 0.028429734112741238
+    },
+    "num_samples": 100,
+    "predictions": [
+      "5.5 mph, 55.2 mph, 75.55 mph, 75.558m, 16.3 mph, 13.2mph, 26.2mph, 16.6mph, 78.58mph, 5,9.3mph, 27.6mph, 13.6mph, 110.2mg.1mgin, 11,00.2mgin, 13,58.5mgin, 27.5mgin, 28,1.3mgin, 17,28.4mgin, 27,79.6mgin, 27,1.6mgin, 27,88.5mgin, 27.4mgin,2.010mgin,28.2mgin,28.5mgin,28.2mgin,2,28mgin,2.4mgin,28.3mgin,2.2mgin,2.2mgin,28.5mgin,28.8mgin,28,1.4mgin,28.8mgin,210.2mgin,28.8mgin,288,28.5mgin,288,28.5mgin,210,28.2mgin,28,27:58,28,120,28,28,2MECOR.",
+      "1.035 inches of",
+      "1.6866",
+      "Glennur, SER, PTA",
+      "Glennat, the normal, and file",
+      "Aguilera",
+      "Helicopter",
+      "CONTIN, NE",
+      "Sport of attack - Other",
+      "1.01 Localance"
+    ],
+    "references": [
+      "Forced landing",
+      "IND,797 ft msl",
+      "VMC",
+      "28.429399,-81.308998",
+      "HEFTY Polar Cub",
+      "The National Transportation Safety Board",
+      "PA-28-235",
+      "FRONTENAC, MN (MY50)",
+      "The pilot's improper landing flare with a left crosswind, which resulted in a hard landing, collapsed landing gear, runway excursion, and nose-over.",
+      "N/"
+    ],
+    "questions": [
+      "What was the VFR Approach/Landing of the accident no. WPR20LA038?",
+      "What was the Observation Facility, Elevation of the accident no. CEN14LA327?",
+      "What was the Meteorological Information and Flight Plan Conditions at Accident Site of the accident no. CEN21FA345?",
+      "What was the Latitude, Longitude of the accident no. DCA22LA001?",
+      "What is the model of the aircraft for the accident no. ANC16FA065?",
+      "Who determines the probable cause(s) of this accident no. ERA18FA118?",
+      "What is the Model/Series of the aircraft bearing accident no. WPR10CA233?",
+      "Where was the Destination of the accident no. CEN14CA479?",
+      "What are the Probable Causes of the accident no. GAA19CA243?",
+      "What was the Turbulence Severity Forecast/Actual of the accident no. ERA20CA210?"
+    ]
+  }
+}

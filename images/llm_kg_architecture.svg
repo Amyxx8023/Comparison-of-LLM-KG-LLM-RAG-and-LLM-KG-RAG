@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <style>
+      .title { font: bold 24px sans-serif; fill: #2c3e50; }
+      .subtitle { font: 18px sans-serif; fill: #34495e; }
+      .text { font: 14px sans-serif; fill: #2c3e50; }
+      .label { font: bold 12px sans-serif; fill: #ffffff; }
+      .box { fill: #3498db; stroke: #2c3e50; stroke-width: 2; }
+      .kg-box { fill: #e74c3c; stroke: #2c3e50; stroke-width: 2; }
+      .data-box { fill: #95a5a6; stroke: #2c3e50; stroke-width: 2; }
+      .output-box { fill: #27ae60; stroke: #2c3e50; stroke-width: 2; }
+      .arrow { fill: none; stroke: #2c3e50; stroke-width: 2; marker-end: url(#arrowhead); }
+      .phase-label { font: bold 16px sans-serif; fill: #e74c3c; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#2c3e50" />
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" class="title">LLM+KG 架构</text>
+  <text x="400" y="55" text-anchor="middle" class="subtitle">知识图谱增强模型</text>
+  
+  <!-- Training Phase -->
+  <text x="50" y="110" class="phase-label">训练阶段</text>
+  <line x1="50" y1="115" x2="750" y2="115" stroke="#e74c3c" stroke-width="1" stroke-dasharray="5,5"/>
+  
+  <!-- Original Data -->
+  <rect x="50" y="140" width="150" height="80" class="data-box" rx="5"/>
+  <text x="125" y="170" text-anchor="middle" class="label">原始训练数据</text>
+  <text x="125" y="190" text-anchor="middle" class="label">(QA Pairs)</text>
+  
+  <!-- Arrow 1 -->
+  <path d="M 200 180 L 260 180" class="arrow"/>
+  
+  <!-- Knowledge Graph Enhancement -->
+  <rect x="260" y="140" width="150" height="80" class="kg-box" rx="5"/>
+  <text x="335" y="170" text-anchor="middle" class="label">知识图谱</text>
+  <text x="335" y="190" text-anchor="middle" class="label">增强处理</text>
+  <text x="335" y="210" text-anchor="middle" class="label" style="font-size: 10px;">(Entity + Relation)</text>
+  
+  <!-- Arrow 2 -->
+  <path d="M 410 180 L 470 180" class="arrow"/>
+  
+  <!-- Enhanced Training Data -->
+  <rect x="470" y="140" width="150" height="80" class="data-box" rx="5"/>
+  <text x="545" y="170" text-anchor="middle" class="label">KG增强</text>
+  <text x="545" y="190" text-anchor="middle" class="label">训练数据</text>
+  
+  <!-- Arrow 3 -->
+  <path d="M 620 180 L 650 180 L 650 280 L 470 280" class="arrow"/>
+  
+  <!-- LLM Model (Training) -->
+  <rect x="320" y="250" width="150" height="80" class="box" rx="5"/>
+  <text x="395" y="280" text-anchor="middle" class="label">MiniMind</text>
+  <text x="395" y="300" text-anchor="middle" class="label">LLM 模型</text>
+  <text x="395" y="320" text-anchor="middle" class="label" style="font-size: 10px;">(训练/微调)</text>
+  
+  <!-- Inference Phase -->
+  <text x="50" y="380" class="phase-label">推理阶段</text>
+  <line x1="50" y1="385" x2="750" y2="385" stroke="#e74c3c" stroke-width="1" stroke-dasharray="5,5"/>
+  
+  <!-- User Input -->
+  <rect x="50" y="410" width="150" height="60" class="data-box" rx="5"/>
+  <text x="125" y="435" text-anchor="middle" class="label">用户输入</text>
+  <text x="125" y="455" text-anchor="middle" class="label">(Query)</text>
+  
+  <!-- Arrow 4 -->
+  <path d="M 200 440 L 320 440" class="arrow"/>
+  
+  <!-- LLM Model (Inference) -->
+  <rect x="320" y="410" width="150" height="60" class="box" rx="5"/>
+  <text x="395" y="435" text-anchor="middle" class="label">KG增强的</text>
+  <text x="395" y="455" text-anchor="middle" class="label">LLM模型</text>
+  
+  <!-- Arrow 5 -->
+  <path d="M 470 440 L 600 440" class="arrow"/>
+  
+  <!-- Output -->
+  <rect x="600" y="410" width="150" height="60" class="output-box" rx="5"/>
+  <text x="675" y="435" text-anchor="middle" class="label">模型输出</text>
+  <text x="675" y="455" text-anchor="middle" class="label">(Answer)</text>
+  
+</svg>
