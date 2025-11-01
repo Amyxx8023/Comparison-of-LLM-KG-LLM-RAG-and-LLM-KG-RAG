@@ -196,10 +196,10 @@ LLM+KG+RAG  2.10  7.10  10.00     21.00     9.11
 
 格式:
 ```csv
-Model,ACC,REL,Comp,Clarity,Overall
-LLM+KG,6.40,6.70,6.60,6.80,8.70
-LLM+RAG,7.20,7.50,7.10,7.30,8.90
-LLM+KG+RAG,7.80,8.00,7.60,7.70,9.20
+Model  ACC   REL  Comp  Clarity  Overall
+  LLM+KG  28.3  38.10  35.70     36.30     34.20
+ LLM+RAG  5.10  11.50  13.20     22.50     12.21
+LLM+KG+RAG  2.10  7.10  10.00     21.00     9.11
 ```
 
 ### 4. 详细预测文件
